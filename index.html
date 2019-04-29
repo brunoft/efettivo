@@ -4,17 +4,27 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- title -->
     <title>Efettivo</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- • GA -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139208890-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-139208890-1');
+    </script>
+
   </head>
   <body>
 
-  <div class="header_primary">
+  <div class="header__primary">
     <div class="row__thin"></div>
     <div class="container">
       <!-- Menu -->
@@ -61,7 +71,7 @@
 
           </div>
           <div class="card__content">
-            <h4 class="card_title">Lorem Ipsum</h4>
+            <h4 class="card__title">Lorem Ipsum</h4>
             <h6 class="card_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</h6>
           </div>
           <div class="btn__card d-flex justify-content-center">
@@ -77,7 +87,7 @@
 
           </div>
           <div class="card__content">
-            <h4 class="card_title">Lorem Ipsum</h6>
+            <h4 class="card__title">Lorem Ipsum</h6>
             <h6 class="card_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</h6>
           </div>
           <div class="btn__card d-flex justify-content-center">
@@ -93,7 +103,7 @@
 
           </div>
           <div class="card__content">
-            <h4 class="card_title">Lorem Ipsum</h6>
+            <h4 class="card__title">Lorem Ipsum</h6>
             <h6 class="card_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</h6>
           </div>
           <div class="btn__card d-flex justify-content-center">
@@ -106,12 +116,12 @@
 
     <!-- Form -->
     <div class="card__form d-flex">
-      <form class="d-flex justify-content-center align-items-center ">
+      <form id="form" class="d-flex justify-content-center align-items-center ">
         <div class="form-group col-4 remove__padding">
-          <input type="text" class="form-control" id="inputName" placeholder="Nome Completo">
+          <input type="text" class="form-control" id="task" placeholder="Nome Completo">
         </div>
         <div class="form-group col-4 remove__padding">
-          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
+          <input type="text" class="form-control" id="description" aria-describedby="emailHelp" placeholder="Email">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="col-4 remove__padding">
@@ -128,7 +138,7 @@
 
           </div>
           <div class="card__content">
-            <h4 class="card_title">Lorem Ipsum</h6>
+            <h4 class="card__title">Lorem Ipsum</h6>
             <h6 class="card_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</h6>
           </div>
           <div class="btn__card d-flex justify-content-center">
@@ -144,7 +154,7 @@
 
           </div>
           <div class="card__content">
-            <h4 class="card_title">Lorem Ipsum</h6>
+            <h4 class="card__title">Lorem Ipsum</h6>
             <h6 class="card_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</h6>
           </div>
           <div class="btn__card d-flex justify-content-center">
@@ -160,7 +170,7 @@
 
           </div>
           <div class="card__content">
-            <h4 class="card_title">Lorem Ipsum</h6>
+            <h4 class="card__title">Lorem Ipsum</h6>
             <h6 class="card_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</h6>
           </div>
           <div class="btn__card d-flex justify-content-center">
@@ -171,10 +181,18 @@
       </div>
     </div>
   </div>
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+    <script defer  type="text/javascript" src="conection-firebase.js"></script>
   </body>
 </html>

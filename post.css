@@ -1,8 +1,68 @@
-.card_title{
+
+.header__primary.menu{
+  height: auto !important;
+}
+.card__title{
   color: #fff !important;
   width: 90%;
 }
-
+.img{
+  background:url(./image/educacao.jpg);
+  background-repeat: no-repeat;
+}
+.img .container .card__title{
+  padding-top: 64px;
+}
 .card__form{
-  
+
+}
+.post .card__form{
+  margin: 0px !important;
+  margin-bottom: 32px !important;
+  flex-direction: column;
+}
+.content_post{
+  position: relative;
+}
+.content_post .post{
+  position: absolute;
+  top: -40px;
+}
+
+.title__form{
+  color: #646464;
+}
+
+.text__post{
+
+}
+.title__post{
+  font-weight: 500;
+}
+
+.content__text{
+  color: #b4b4b4;
+}
+
+.box__post{
+  background-color: #38b491;
+  border-radius: 8px;
+}
+.box__title{
+  color: #fff;
+  text-align: center;
+}
+/* break point */
+@media (max-width: 768px) {
+  form{
+    flex-direction: column !important;
+  }
+  .form-group{
+    margin-bottom: 8px !important;
+  }
+  .btn__form{
+    display: flex;
+    justify-content: center;
+  }
+
 }
