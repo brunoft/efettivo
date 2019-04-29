@@ -127,7 +127,22 @@ ul li a{
   padding: 4px 64px;
   cursor: pointer;
 }
-.btn__primary.btn__small{
+.btn__default{
+  padding: 4px 64px;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 0px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 4px 64px;
+}
+.btn__small{
   padding: 8px 32px !important;
   border-radius: 32px !important;
 }
+
+.btn__white{
+  background-color: #fff;
+  color: #38B491;
+}
+.
