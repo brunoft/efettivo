@@ -11,35 +11,66 @@ body{
     padding-right: 8px !important;
 }
 
-
 .header__primary{
   background-color:#38B491;
-  height: 260px;
-}
-.nav__bar{
-  border-bottom: 2px solid #fff;
-  padding-top: 8px;
-  position: relative;
-}
-nav ul{
-  width: 100%;
-  flex-direction: row !important;
+  padding-bottom: 60px;
 }
 
-ul li + li{
-  padding-left: 8px;
+/* Modifying BS */
+.navbar{
+  border-bottom: 1px solid #fff;
 }
+/* MediaQuery NavBar */
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end !important;
+  }
+}
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+.navbar-toggler:hover {
+  transition: .2s;
+  background-color:rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+.nav-item {
+  padding: 0px 8px;
+}
+
+@media screen and (max-width: 992px){
+  .nav-item {
+    padding: 8px;
+  }
+}
+
+.nav-item:hover {
+  transition: .2s;
+  border-radius: 4px;
+  background-color:rgba(0,0,0,0.1);
+}
+
+/* End Modifying */
+
 ul li a{
   color: #fff !important;
 }
 .header__title{
-  padding-top: 32px;
+  padding-top: 60px;
 }
 .title{
   color: #fff !important;
+  text-align: center;
 }
 .subtitle{
   color: #fff !important;
+  text-align: center;
+  font-weight: 400;
 }
 
 .content{
@@ -50,10 +81,15 @@ ul li a{
 
 .card__publish{
   /* height: 310px; */
-  box-shadow: 0 3px 6px rgba(0,0,0,0.06), 0 3px 6px rgba(0,0,0,0.13);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+.card__publish:hover{
+  transition: .3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .card__content{
-  margin: 8px;
+  margin: 16px;
 }
 .card_img{
   height: 180px;
@@ -61,13 +97,13 @@ ul li a{
   border-radius: 4px 4px 0px 0px;
 }
 .card__title{
-
+  color: #333;
 }
 .card_text{
-  color: #8e8e8e;
+  color: #666;
   white-space: nowrap;
   overflow: hidden;
-  height: 120px;
+  min-height: 100px;
   text-overflow: ellipsis;
 
 }
@@ -75,6 +111,7 @@ ul li a{
 .btn__card{
   padding-bottom: 16px;
 }
+
 @media (max-width: 768px) {
 .card__publish{
   margin-bottom: 32px;
@@ -89,7 +126,7 @@ ul li a{
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px; */
-  padding: 16px 32px;
+  padding: 32px;
   margin: 32px 0px;
   flex-direction: column;
 }
@@ -113,7 +150,9 @@ ul li a{
   border-color: inherit !important;
   box-shadow: inherit !important;
 }
-
+.title__form{
+  padding-bottom: 16px;
+}
 
 /* --------------------------------- button  */
 
@@ -126,6 +165,10 @@ ul li a{
   font-weight: bold;
   padding: 4px 64px;
   cursor: pointer;
+}
+.btn__primary:hover{
+  background-color: #399D81;
+  transition: .3s;
 }
 .btn__primary.btn__small{
   padding: 8px 32px !important;
