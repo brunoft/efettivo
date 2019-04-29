@@ -16,29 +16,29 @@ var t = d.getTime();
 var counter =t;
 
 document.getElementById("form").addEventListener("submit",(e)=>{
-  var task = document.getElementById("task").value;
-  var description = document.getElementById("description").value;
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
   e.preventDefault();
-  createTask(task,description);
+  createTask(name,email);
   form.reset();
 
 
 });
 
-function createTask(taskName,description){
+function createTask(name,email){
   console.log(counter);
   counter+=1;
   $.getJSON("https://jsonip.com?callback=?").then(function(data){
           var datetime = new Date();
           var task={
             id:counter,
-            task: taskName,
-            description:description,
+            name: name,
+            email: email,
             ip: data.ip,
             date: datetime.toLocaleDateString()+" "+datetime.toLocaleTimeString()
           }
           console.log(task);
-          let db= firebase.database().ref("teste/"+counter);
+          let db= firebase.database().ref("leads/"+counter);
           db.set(task);
         });
 }
