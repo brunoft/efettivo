@@ -91,6 +91,7 @@ ul li a{
   padding-right: 32px; */
   padding: 16px 32px;
   margin: 32px 0px;
+  flex-direction: column;
 }
 
 
@@ -112,6 +113,7 @@ ul li a{
   border-color: inherit !important;
   box-shadow: inherit !important;
 }
+
 
 /* --------------------------------- button  */
 
