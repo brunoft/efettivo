@@ -30,11 +30,11 @@ function createTask(taskName,description){
   counter+=1;
   console.log(counter);
   var task={
-    task: taskName,
     id:counter,
+    task: taskName,
     description:description
   }
-  let db= firebase.database().red("taks/"+counter);
+  let db= firebase.database().ref("tasks/"+counter);
   db.set(task);
 
 }
