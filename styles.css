@@ -32,12 +32,6 @@ ul li + li{
 ul li a{
   color: #fff !important;
 }
-.row__thin{
-  border-top: 1px solid #fff;
-  position: absolute;
-  width: 100%;
-  top: 65px;
-}
 .header__title{
   padding-top: 32px;
 }
