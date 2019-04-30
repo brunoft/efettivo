@@ -60,7 +60,7 @@
 .box__post{
   background-color: #38b491;
   border-radius: 8px;
-  padding: 16px;
+  padding: 24px;
 }
 
 .box__post img{
@@ -70,6 +70,7 @@
 }
 .box__title{
   color: #fff;
+  text-transform: uppercase;
   text-align: center;
 }
 @media (max-width: 992px) {
