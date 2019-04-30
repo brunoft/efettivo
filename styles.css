@@ -178,3 +178,17 @@ ul li a{
   padding: 8px 32px !important;
   border-radius: 32px !important;
 }
+
+.btn__white{
+  background-color: #fff;
+  color: #38B491;
+}
+.btn__default{
+  padding: 4px 64px;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 0px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 4px 64px;
+}
