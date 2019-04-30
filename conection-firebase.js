@@ -70,6 +70,13 @@ function onInscrever()
   createTask(name,email);
   document.getElementById("formInscrever").reset();
 }
+function onInscrever2()
+{
+  var name = document.getElementById("name2").value;
+  var email = document.getElementById("email2").value;
+  createTask(name,email);
+  document.getElementById("formInscrever2").reset();
+}
 
 function formEbookClick()
 {
