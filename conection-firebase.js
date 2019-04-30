@@ -33,12 +33,12 @@ function GetEmailType(email)
     "yahoo",
     "wanadoo.",
     "comcast",];
-  var rst = "B2C";
+  var rst = "B2B";
   lista.forEach(function(et, index, array)
   {
     if(email.includes(et))
     {
-      rst = "B2B";
+      rst = "B2C";
       return;
     }
   });

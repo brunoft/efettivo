@@ -185,12 +185,18 @@ ul li a{
   background-color: #fff;
   color: #38B491;
 }
+.btn__white:hover {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px white inset;
+  color: white;
+}
 .btn__default{
   padding: 4px 64px;
   cursor: pointer;
   border-radius: 16px;
+  min-width: 120px;
   border: 0px !important;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 4px 64px;
+  padding: 4px 16px;
 }

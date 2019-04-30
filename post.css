@@ -8,6 +8,7 @@
 .card__title{
   color: #fff !important;
   font-size:2.25em;
+  padding: 60px 0px;
   font-weight: bold;
   text-shadow: 0 2px 4px rgba(0,0,0, .27);
   text-align: center;
@@ -60,7 +61,7 @@
 .box__post{
   background-color: #38b491;
   border-radius: 8px;
-  padding: 16px;
+  padding: 24px;
 }
 
 .box__post img{
@@ -70,6 +71,7 @@
 }
 .box__title{
   color: #fff;
+  text-transform: uppercase;
   text-align: center;
 }
 .modal-dialog{
