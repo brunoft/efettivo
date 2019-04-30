@@ -93,7 +93,8 @@ ul li a{
 }
 .card_img{
   height: 180px;
-  background-color: orange;
+  background-size:cover;
+  background-position:center center;
   border-radius: 4px 4px 0px 0px;
 }
 .card__title{
@@ -101,10 +102,7 @@ ul li a{
 }
 .card_text{
   color: #666;
-  white-space: nowrap;
-  overflow: hidden;
   min-height: 100px;
-  text-overflow: ellipsis;
 
 }
 .btn__card{
