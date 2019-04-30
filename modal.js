@@ -3,7 +3,7 @@
 //
 //   $('#myInput').trigger('focus')
 // })
-function exampleModalCenter(){
+function Modal(){
   console.log("so vai");
   document.getElementById("formEbook").style.visibility = "visible";
   document.getElementById("linkEbook").style.visibility = "hidden";
