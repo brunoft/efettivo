@@ -1,5 +1,4 @@
 // Initialize Firebase
-// Initialize Firebase
 var config = {
   apiKey: "AIzaSyBfcwfplRjbWhhx_dyxZiDZojJwMoxSwMU",
   authDomain: "clientes-9cc69.firebaseapp.com",
@@ -12,22 +11,41 @@ firebase.initializeApp(config);
 
 var d = new Date();
 var t = d.getTime();
-
 var counter =t;
 
-document.getElementById("form").addEventListener("submit",(e)=>{
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  e.preventDefault();
-  createTask(name,email);
-  form.reset();
+var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-
-});
-
-function createTask(name,email){
+function createTask(name,email,type){
   console.log(counter);
   counter+=1;
+
+
+
+function GetEmailType(email)
+{
+  var lista = ["@gmail",
+    "@hotmail",
+    "@yahoo",
+    "@outlook",
+    "aol",
+    "hotmail",
+    "msn",
+    "yahoo",
+    "wanadoo.",
+    "comcast",];
+  var rst = "B2C";
+  lista.forEach(function(et, index, array)
+  {
+    if(email.includes(et))
+    {
+      rst = "B2B";
+      return;
+    }
+  });
+  return rst;
+}
+
+
   $.getJSON("https://jsonip.com?callback=?").then(function(data){
           var datetime = new Date();
           var task={
@@ -35,20 +53,36 @@ function createTask(name,email){
             name: name,
             email: email,
             ip: data.ip,
+            type: GetEmailType(email),
             date: datetime.toLocaleDateString()+" "+datetime.toLocaleTimeString()
           }
           console.log(task);
           let db= firebase.database().ref("leads/"+counter);
           db.set(task);
+
         });
 }
 
+function onInscrever()
+{
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  createTask(name,email);
+  document.getElementById("formInscrever").reset();
+}
 
-function getUserIP(){
-  $.getJSON("https://jsonip.com?callback=?", function (data){
-    // console.log(data.ip);
-    return data;
+function formEbookClick()
+{
+  var name = document.getElementById("eb_name").value;
+  var email = document.getElementById("eb_email").value;
+  if(name == "" || email ==="" || !emailRegex.test(email)){
+    return;
+  }
+  document.getElementById("formEbook").reset();
+  createTask(name,email);
+  document.getElementById("formEbook").style.visibility = "hidden";
+  document.getElementById("linkEbook").style.visibility = "visible";
 
-  });
+
 
 }

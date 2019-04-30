@@ -72,15 +72,31 @@
   color: #fff;
   text-align: center;
 }
+.modal-dialog{
+  min-width: 80%;
+}
+.modal-body {
+  position: relative;
+}
+.downebook{
+  position: absolute;
+}
+/* modal fotter */
+.downebook{
+  visibility: hidden;
+  align-items: baseline;
+}
+.downebook h6{
+  margin-right: 16px;
+}
 @media (max-width: 992px) {
-.content__text{
-  flex-direction: column !important;
-  align-items: center !important;
-}
-.box__post{
-  margin-bottom: 16px;
-}
-
+  .content__text{
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .box__post{
+    margin-bottom: 16px;
+  }
 }
 /* break point */
 @media (max-width: 768px) {
@@ -93,6 +109,10 @@
   .btn__form{
     display: flex;
     justify-content: center;
+  }
+  .remove__padding{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 
 }
