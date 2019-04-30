@@ -2,6 +2,9 @@ body{
   background-color: #f5f5f5;
   font-family: "Roboto" !important;
 }
+a:hover{
+  color: #fff !important;
+}
 /*  --------------------------------- remove padding */
 .remove__padding{
   padding-left: 0px !important;
