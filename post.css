@@ -77,6 +77,13 @@
 .modal-dialog{
   min-width: 80%;
 }
+@media (min-width: 992px) {
+  /* Modal Width */
+  .modal-dialog{
+    min-width: 50%;
+  }
+}
+
 .modal-body {
   position: relative;
 }

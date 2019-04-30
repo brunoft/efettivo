@@ -20,5 +20,5 @@ function Modal(){
 function downloadEbook(file)
 {
  // window.location="";
-  window.open('ebook/ebook_01.pdf','_blank');
+  window.open('ebook/ebook-efettivo-ferramentas-para-empresas-produtivas.pdf','_blank');
 }
