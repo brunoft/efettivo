@@ -13,10 +13,11 @@ body{
 
 .header__primary{
   background-color:#38B491;
-  padding-bottom: 60px;
+
 }
 
 /* Modifying BS */
+
 .navbar{
   border-bottom: 1px solid #fff;
 }
@@ -61,7 +62,7 @@ ul li a{
   color: #fff !important;
 }
 .header__title{
-  padding-top: 60px;
+  padding: 60px 16px;
 }
 .title{
   color: #fff !important;

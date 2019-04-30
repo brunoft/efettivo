@@ -1,14 +1,23 @@
-
+.post__type .navbar{
+  border-bottom: 0px solid #fff;
+}
 .header__primary.menu{
   height: auto !important;
 }
 .card__title{
   color: #fff !important;
-  width: 90%;
+  font-size:2.25em;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0, .27);
+  text-align: center;
 }
-.img{
-  background:url(./image/educacao.jpg);
-  background-repeat: no-repeat;
+.header__img{
+  min-height: 200px;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  padding-bottom:32px;
 }
 .img .container .card__title{
   padding-top: 64px;
@@ -41,7 +50,10 @@
 }
 
 .paragraph__text{
-  color: #b4b4b4;
+  color: rgba(0,0,0, .64);
+  font-size:1em;
+  line-height: 140%;
+  font-weight: lighter;
 }
 
 .box__post{
