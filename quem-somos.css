@@ -1,0 +1,21 @@
+.card__title{
+  text-align: start !important;
+  padding: 0px !important;
+  margin-top: 64px;
+}
+.header__img{
+  padding-bottom: 0px !important;
+}
+.text__post{
+  margin-top: 32px;
+}
+
+footer{
+  background-color: #666666;
+}
+footer img{
+  width: 120px;
+}
+.footer__img{
+  height: 64px; 
+}
