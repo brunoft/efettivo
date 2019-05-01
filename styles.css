@@ -5,6 +5,9 @@ body{
 a:hover{
   color: #fff !important;
 }
+strong, b{
+  font-weight:700 !important;
+}
 /*  --------------------------------- remove padding */
 .remove__padding{
   padding-left: 0px !important;
@@ -16,7 +19,6 @@ a:hover{
 
 .header__primary{
   background-color:#38B491;
-
 }
 
 /* Modifying BS */
