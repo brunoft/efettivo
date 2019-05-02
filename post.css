@@ -77,6 +77,10 @@
 .modal-dialog{
   min-width: 80%;
 }
+
+/* .content_post {
+ min-height: calc(100vh - 348px);
+} */
 @media (min-width: 992px) {
   /* Modal Width */
   .modal-dialog{

@@ -9,13 +9,9 @@
 .text__post{
   margin-top: 32px;
 }
-
-footer{
-  background-color: #666666;
+.content_post{
+ min-height: calc(100vh - 348px);
 }
-footer img{
-  width: 120px;
-}
-.footer__img{
-  height: 64px; 
+.box__post{
+  margin-top: 32px;
 }

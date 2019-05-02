@@ -157,6 +157,16 @@ ul li a{
   text-align: center;
 }
 
+footer{
+  background-color: #666666;
+}
+footer img{
+  width: 120px;
+}
+.footer__img{
+  height: 64px;
+}
+
 /* --------------------------------- button  */
 
 .btn__primary{
