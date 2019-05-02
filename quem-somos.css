@@ -15,3 +15,7 @@
 .box__post{
   margin-top: 32px;
 }
+
+.header__img{
+   background-image:url('image/imgAbout.png') !important;
+}
