@@ -60,11 +60,16 @@ function GetEmailType(email)
           let db= firebase.database().ref("leads/"+counter);
           db.set(task);
 
+
+
         });
 }
 
 function onInscrever()
 {
+  var x = document.getElementById("toast")
+   x.className = "show";
+   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 50000);
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   if(name == "" || email ==="" || !emailRegex.test(email)){
@@ -75,6 +80,9 @@ function onInscrever()
 }
 function onInscrever2()
 {
+  var x = document.getElementById("toast")
+   x.className = "show";
+   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
   var name = document.getElementById("name2").value;
   var email = document.getElementById("email2").value;
   if(name == "" || email ==="" || !emailRegex.test(email)){
