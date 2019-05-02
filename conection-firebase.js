@@ -67,6 +67,9 @@ function onInscrever()
 {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
+  if(name == "" || email ==="" || !emailRegex.test(email)){
+    return;
+  }
   createTask(name,email);
   document.getElementById("formInscrever").reset();
 }
@@ -74,6 +77,9 @@ function onInscrever2()
 {
   var name = document.getElementById("name2").value;
   var email = document.getElementById("email2").value;
+  if(name == "" || email ==="" || !emailRegex.test(email)){
+    return;
+  }
   createTask(name,email);
   document.getElementById("formInscrever2").reset();
 }
