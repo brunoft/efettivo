@@ -32,6 +32,10 @@ strong, b{
     justify-content: flex-end !important;
   }
 }
+.navbar-nav {
+  align-items: center;
+}
+
 .navbar-light .navbar-toggler {
   color: transparent;
   border-color: transparent;
