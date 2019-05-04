@@ -1,3 +1,4 @@
+/* Defaut */
 body{
   background-color: #f5f5f5;
   font-family: "Roboto" !important;
@@ -17,21 +18,24 @@ strong, b{
     padding-right: 8px !important;
 }
 
+/* Header */
 .header__primary{
   background-color:#38B491;
 }
+/* Nav bar */
 
 /* Modifying BS */
-
 .navbar{
   border-bottom: 1px solid #fff;
 }
+
 /* MediaQuery NavBar */
 @media screen and (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end !important;
   }
 }
+
 .navbar-nav {
   align-items: center;
 }
@@ -53,6 +57,7 @@ strong, b{
   padding: 0px 8px;
 }
 
+/* MediaQuery NavBar */
 @media screen and (max-width: 992px){
   .nav-item {
     padding: 8px;
